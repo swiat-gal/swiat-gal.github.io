@@ -1,0 +1,92 @@
+body {
+	font-family: monospace;
+	font-size: 1.6em;
+        max-width: 1000px;
+	margin: auto;
+	background-color: #fed;
+	border: 1px solid #240;
+}
+h1 {
+	font-family: serif;
+	font-size: 1.25em;
+	font-weight: 100;
+	color: #fff;
+	text-shadow: 0 0 6px #8a4;
+	background-color: #531;
+	padding: .5em; 
+}
+h1 img {
+	float:right;
+	padding: 5px;
+	background: #fff;
+        border: 1px solid #000;
+}
+pre {
+        padding: 0 0 0 2em;
+}
+
+p {
+	text-indent: -1em;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #a62;
+}
+a:hover {
+	text-shadow: 2px 2px 2px #aaa;
+	position: relative;
+	bottom: 2px;
+	right: 2px;
+}
+a:visited {color: #531; }
+span.sc {
+	font-variant: small-caps;
+	font-variant-numeric: oldstyle-nums diagonal-fractions;
+}
+span.E {
+	position:relative;
+	font-size: .8em;
+	top:0.5ex;
+	margin: 0 -.05em 0 -.1em;
+}
+
+.container {
+  position: relative;
+  margin: -24px 0 48px 0;
+}
+.text {
+  display:block;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  max-height:200px;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+input:checked ~ .text {
+    display:inline-block;
+    max-height: 160%;
+}
+label {
+  position: absolute;
+  top: 100%;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+label:after {
+  content: "Show More";
+}
+input:checked + label:after {
+  content: "Show Less";
+}
+input {
+    display: none;
+}
